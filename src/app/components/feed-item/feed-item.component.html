@@ -11,10 +11,13 @@
             <div class="content__body--details grid">
                 <div class="content__body--details--description">
                     <span [innerHtml]="getStrippedDescription() | slice:0:100"></span>
-                    <app-overlay [overlayId]="getPopUpId(item.author_id)" [description]="item.description" ></app-overlay>
+                    <app-overlay [overlayId]="getPopUpId(item.author_id)"
+                                 [description]="item.description"></app-overlay>
                 </div>
                 <div class="content__body--details--tags">
-                    <b> Tags </b> <a class="content__body--details--tags--tag" [href]="getTagLink(tag)" [innerHtml]="tag" target="_blank" *ngFor="let tag of tagList(); let last = last"></a>
+                    <b> Tags </b> <a class="content__body--details--tags--tag" [href]="getTagLink(tag)"
+                                     [innerHtml]="tag" target="_blank"
+                                     *ngFor="let tag of tagList(); let last = last"></a>
                 </div>
             </div>
         </div>

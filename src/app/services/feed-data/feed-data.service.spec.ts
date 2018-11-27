@@ -1,12 +1,12 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { PhotoStreamDataService } from './feed-data.service';
+import {FeedDataService} from './feed-data.service';
 
 describe('FeedDataService', () => {
     beforeEach(() => TestBed.configureTestingModule({}));
 
     it('should be created', () => {
-        const service: PhotoStreamDataService = TestBed.get(PhotoStreamDataService);
+        const service: FeedDataService = TestBed.get(FeedDataService);
         expect(service).toBeTruthy();
     });
 });
