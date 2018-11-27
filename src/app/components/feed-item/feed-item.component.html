@@ -1,0 +1,19 @@
+<div class="content__wrapper">
+    <div class="content">
+        <div class="content__image">
+            <img [src]="item.media.m" [alt]="item.title">
+        </div>
+        <div class="content__body">
+            <h3 class="content__body--title">
+                <a [attr.href]="item.link" [innerHtml]="item.title" target="_blank"></a> by
+                <a [attr.href]="getAuthorProfileLink()" [innerHtml]="getAuthorName()" target="_blank"></a>
+            </h3>
+            <div class="content__body--details">
+                <div class="content__body--details--description" [innerHTML]="getStrippedDescription()"></div>
+                <div class="content__body--details--tags">
+                    <b> Tags </b> <a class="tag" [href]="getTagLink(tag)" [innerHtml]="tag" target="_blank" *ngFor="let tag of tagList(); let last = last"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

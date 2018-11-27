@@ -1,0 +1,10 @@
+{
+  "/posts": {
+    "target": "https://api.flickr.com",
+    "secure": true,
+    "pathRewrite": {
+      "^/posts": ""
+    },
+    "changeOrigin": true
+  }
+}

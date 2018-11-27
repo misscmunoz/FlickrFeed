@@ -1,0 +1,30 @@
+.content__image, .content__body--title, .content__body--details {
+    margin: 10px;
+    word-wrap: break-word;
+}
+
+img {
+    height: 12em;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.tag {
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.content__body--details {
+    width: 20em;
+    height: 10em;
+    overflow: auto;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+.content__body--details,
+.content__body--details:hover,
+.content__body--details:focus {
+    visibility: visible;
+}

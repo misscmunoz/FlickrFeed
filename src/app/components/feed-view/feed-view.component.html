@@ -1,0 +1,28 @@
+<div class="wrapper"
+     *ngIf="data"
+     infiniteScroll
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="4"
+     (scrolled)="onScrollDown()">
+    <div class="container">
+        <div class="row">
+            <div class="search">
+                <div class="search__gallery">
+                    <input type="text" [(ngModel)]="searchText" placeholder="Search Images">
+                    <button (click)="clearSearch()"> Clear </button>
+                </div>
+                <div class="search__tags">
+                    <input (keydown.enter)="search()" type="text" [(ngModel)]="searchTag" placeholder="Search Flickr">
+                    <button (click)="search()"> Search </button>
+                </div>
+            </div>
+
+
+            <ul class="grid">
+                <li class="clearfix" *ngFor="let item of items | filter : searchText">
+                    <app-feed-item [item]="item"></app-feed-item>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
