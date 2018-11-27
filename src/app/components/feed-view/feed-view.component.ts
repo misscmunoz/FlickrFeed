@@ -6,7 +6,7 @@ import { FeedItem } from '../../model/FeedItem';
 @Component({
     selector: 'app-feed-view',
     templateUrl: './feed-view.component.html',
-    styleUrls: ['./feed-view.component.css'],
+    styleUrls: ['./feed-view.component.scss'],
     providers: [FeedDataService],
 })
 export class FeedViewComponent implements OnInit {

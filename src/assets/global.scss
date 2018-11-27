@@ -1,0 +1,25 @@
+body {
+    font: 13px Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #383939;
+    padding: 40px 20px;
+}
+
+a {
+    text-decoration: none;
+    color:  #aa80ff;
+}
+
+
+input[type=text], button {
+    padding: 12px 15px;
+    margin: 8px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 10px;
+}
