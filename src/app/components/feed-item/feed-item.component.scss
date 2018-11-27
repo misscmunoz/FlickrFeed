@@ -1,9 +1,4 @@
 .content__wrapper {
-    .content__image, .content__body {
-        margin: 10px;
-        word-wrap: break-word;
-    }
-
     img {
         height: 12em;
         width: 90%;
@@ -17,12 +12,19 @@
     }
 
     .content__body {
+
+        margin: 10px;
+        word-wrap: break-word;
+
+        &--title {
+            text-align: center;
+        }
+
         &--details {
             width: 20em;
             height: 10em;
             overflow: auto;
             margin: 0 auto;
-            visibility: hidden;
 
             &:hover, &:focus {
                 visibility: visible;
