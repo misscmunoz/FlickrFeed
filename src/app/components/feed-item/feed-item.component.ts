@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { FeedItem } from '../../model/FeedItem';
 import Utils from '../../utils/utils';
 
-
 export interface ViewModel {
     item: FeedItem;
 }
@@ -38,5 +37,8 @@ export class FeedItemComponent implements ViewModel {
 
     public getTagLink(tag: string): string {
         return Utils.photoTagUtil(tag);
+    }
+    public getPopUpId(id: string): string {
+        return Utils.photoPopUpUtil(id);
     }
 }

@@ -16,10 +16,14 @@ export default class Utils {
             description.lastIndexOf('</p>')
         ).replace(/<[^>]*>/g, '');
 
-        return strippedDescription ? `<p><strong>Description</strong> ${strippedDescription} </p>` : '<strong> No description </strong>';
+        return strippedDescription ? ` ${strippedDescription} ` : 'No description';
     }
 
     static photoTagUtil(tag: string): string {
          return CONFIG.BASE_URL.SEARCH_URL + `${tag}`;
+    }
+
+    static photoPopUpUtil(id: string): string {
+        return `popup${id}`;
     }
 }

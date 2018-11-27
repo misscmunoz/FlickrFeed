@@ -8,10 +8,13 @@
                 <a [attr.href]="item.link" [innerHtml]="item.title" target="_blank"></a> by
                 <a [attr.href]="getAuthorProfileLink()" [innerHtml]="getAuthorName()" target="_blank"></a>
             </h3>
-            <div class="content__body--details">
-                <div class="content__body--details--description" [innerHTML]="getStrippedDescription()"></div>
+            <div class="content__body--details grid">
+                <div class="content__body--details--description">
+                    <strong> Description </strong>{{ getStrippedDescription() | slice:0:100 }} ...
+                    <app-overlay [overlayId]="getPopUpId(item.author_id)" [description]="item.description" ></app-overlay>
+                </div>
                 <div class="content__body--details--tags">
-                    <b> Tags </b> <a class="tag" [href]="getTagLink(tag)" [innerHtml]="tag" target="_blank" *ngFor="let tag of tagList(); let last = last"></a>
+                    <b> Tags </b> <a class="content__body--details--tags--tag" [href]="getTagLink(tag)" [innerHtml]="tag" target="_blank" *ngFor="let tag of tagList(); let last = last"></a>
                 </div>
             </div>
         </div>

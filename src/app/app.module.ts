@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 // Components
 import { FeedViewComponent } from './components/feed-view/feed-view.component';
 import { FeedItemComponent } from './components/feed-item/feed-item.component';
+import { OverlayComponent } from './components/overlay/overlay.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedViewComponent,
-    FeedItemComponent
+    FeedItemComponent,
+    OverlayComponent
   ],
   imports: [
     BrowserModule,

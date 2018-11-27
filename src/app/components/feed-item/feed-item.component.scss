@@ -2,17 +2,11 @@
     img {
         height: 12em;
         width: 90%;
-        margin: 0 auto;
+        margin: 10px auto;
         display: block;
     }
 
-    .tag {
-        margin-left: 10px;
-        object-fit: cover;
-    }
-
     .content__body {
-
         margin: 10px;
         word-wrap: break-word;
 
@@ -21,13 +15,16 @@
         }
 
         &--details {
-            width: 20em;
-            height: 10em;
-            overflow: auto;
-            margin: 0 auto;
-
             &:hover, &:focus {
                 visibility: visible;
+            }
+            &--tags {
+                overflow: auto;
+                height: 3rem;
+                &--tag {
+                    margin-left: 10px;
+                    object-fit: cover;
+                }
             }
         }
     }
