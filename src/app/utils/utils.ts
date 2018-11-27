@@ -16,7 +16,7 @@ export default class Utils {
             description.lastIndexOf('</p>')
         ).replace(/<[^>]*>/g, '');
 
-        return strippedDescription ? ` ${strippedDescription} ` : 'No description';
+        return strippedDescription ? `<strong>Description</strong> ${strippedDescription} ` : '<p>No description</p>';
     }
 
     static photoTagUtil(tag: string): string {
