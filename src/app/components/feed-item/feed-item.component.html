@@ -11,7 +11,7 @@
             <div class="content__body--details grid">
                 <div class="content__body--details--description">
                     <span [innerHtml]="getStrippedDescription() | slice:0:100"></span>
-                    <app-overlay [overlayId]="getPopUpId(item.author_id)"
+                    <app-overlay [overlayId]="getPopUpId(item.link)"
                                  [description]="item.description"></app-overlay>
                 </div>
                 <div class="content__body--details--tags">

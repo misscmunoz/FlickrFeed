@@ -16,7 +16,7 @@
 }
 
 .popup {
-    margin: 70px auto;
+    margin: 20px auto;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
@@ -48,6 +48,7 @@
     .content {
         max-height: 30%;
         overflow: auto;
+        text-align: center;
     }
 }
 

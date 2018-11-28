@@ -18,12 +18,12 @@ export default class Utils {
 
         return strippedDescription ? `<strong>Description</strong> ${strippedDescription} ` : '<p>No description</p>';
     }
-
+    /** Create search link **/
     static photoTagUtil(tag: string): string {
          return CONFIG.BASE_URL.SEARCH_URL + `${tag}`;
     }
-
-    static photoPopUpUtil(id: string): string {
-        return `popup${id}`;
+    /** Create a unique ID **/
+    static photoPopUpUtil(id: string, identifier = 'popup'): string {
+        return `${identifier}${id}`;
     }
 }

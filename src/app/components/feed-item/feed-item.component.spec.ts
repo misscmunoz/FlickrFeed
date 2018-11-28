@@ -1,6 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {FeedItemComponent} from './feed-item.component';
+import { FeedItemComponent } from './feed-item.component';
 
 describe('FeedItemComponent', () => {
     let component: FeedItemComponent;
