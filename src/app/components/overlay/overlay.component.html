@@ -1,4 +1,4 @@
-<div class="wrapper" *ngIf="description !== ''">
+<div class="wrapper" *ngIf="description !== '' && overlayId != null">
     <span class="box">
         <a [href]="'#'+overlayId"> Flickr description <i class="fa fa-arrows-alt"></i></a>
     </span>
@@ -12,4 +12,3 @@
         </div>
     </div>
 </div>
-
